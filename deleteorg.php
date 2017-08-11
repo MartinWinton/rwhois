@@ -28,15 +28,7 @@ a {
 	
 	$self= $_SERVER['PHP_SELF'];
 
-
-
-
-
-
-
 	$d_org = test_input($_GET["org"]);
-
-
 	$mark = strtolower(test_input($_GET["org"]).'.txt');
 	$mark = str_replace("/","-",$mark);
 	$mark = str_replace(" ","",$mark);
@@ -79,27 +71,11 @@ a {
 		}
 
 
-
-
-
-
-
-
 	}
 
 
 
 	// checks database for ip and dies if not found
-
-
-
-
-
-
-
-
-
-
 
 
 				?>
@@ -133,18 +109,6 @@ a {
 
 
 	</form>
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
