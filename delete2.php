@@ -26,12 +26,6 @@ a {
 
 	$self= $_SERVER['PHP_SELF'];
 
-
-
-
-
-
-
 	$d_org = test_input($_GET["choose"]);
 
 
@@ -81,14 +75,6 @@ a {
 		}
 
 
-
-
-
-
-
-
-
-
 		for($k = 0; $k<count($ipfiles);$k++){
 			$markk = strtolower(test_input($ipfiles[$k]));
 
@@ -101,14 +87,7 @@ a {
 
 
 		}
-
-
-
-
-
 	}
-
-
 
 	// checks database for org/ip and gives eror if not found
 
@@ -135,15 +114,7 @@ a {
 				echo "Failure Deleting. This IP must not exist!";
 			}
 
-
-
-
-
-
 		}
-
-
-
 
 			
 		if(@unlink("/usr/local/rwhoisd/net-$ip/data/org/" . $mark)){
@@ -154,10 +125,6 @@ a {
 		}
 
 
-
-			
-
-
 		else{
 			echo "Failure Deleting. This Org must not exist!";
 		}
@@ -165,9 +132,6 @@ a {
 
 
 	}
-
-
-
 
 
 	function test_input($data) {
@@ -187,19 +151,6 @@ a {
 		<br> <input name="add" type="submit" id="add" value="Delete">
 
 	</form>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
