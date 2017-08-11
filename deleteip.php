@@ -62,12 +62,6 @@ a {
 		if($string = file_get_contents("/usr/local/rwhoisd/net-$auth/data/network/$mark")){
 
 
-
-
-
-
-
-
 			if(@unlink("/usr/local/rwhoisd/net-$auth/data/network/" . $mark)){
 				echo "File Deleted";
 				echo "<td><a href = \"viewip.php\">Home! </a></td>";
@@ -84,11 +78,6 @@ die("Error deleting File");
 }
 
 
-
-
-
-
-
 		}
 
 		else{
@@ -99,9 +88,6 @@ die("Error deleting File");
 
 
 	}
-
-
-
 
 
 	function test_input($data) {
@@ -121,18 +107,6 @@ die("Error deleting File");
 		<br> <input name="add" type="submit" id="add" value="Delete">
 
 	</form>
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
