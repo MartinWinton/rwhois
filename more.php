@@ -23,8 +23,6 @@ a {
 
 	<h1>Welcome to Updater</h1>
 
-
-
 	<?php
 
 	include 'functions.php';
@@ -44,21 +42,10 @@ a {
 
 	echo "<h3>Viewing " .$mark."</h3>";
 
-
 	//var_dump($ipfiles);
 
 
-
-
-
-
 	if($string = @file_get_contents("/usr/local/rwhoisd/net-$auth/data/network/" . $mark)){
-
-
-
-
-
-
 
 
 		preg_match_all("/((.+): (.+))/",$string,$matches);
@@ -76,15 +63,8 @@ a {
 		$updated = test_input($matches[3][9]);
 		$email = test_input($matches[3][10]);
 			
-
 			
 		//var_dump($matches);
-
-
-
-
-
-
 
 
 		echo '<table border="1">';
@@ -108,14 +88,6 @@ a {
 		}
 
 
-
-
-
-
-
-
-
-
 	}
 
 	else{
@@ -124,25 +96,7 @@ a {
 
 
 
-
-
-
-
 	?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>
